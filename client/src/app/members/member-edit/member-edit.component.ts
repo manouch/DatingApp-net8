@@ -12,6 +12,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { PhotoEditorComponent } from '../photo-editor/photo-editor.component';
+import { DatePipe } from '@angular/common';
+import { TimeagoModule } from 'ngx-timeago';
 
 @Component({
   selector: 'app-member-edit',
@@ -20,7 +22,8 @@ import { PhotoEditorComponent } from '../photo-editor/photo-editor.component';
     TabsModule,
     FormsModule,
     PhotoEditorComponent,
-    PhotoEditorComponent,
+    DatePipe,
+    TimeagoModule
   ],
   templateUrl: './member-edit.component.html',
   styleUrl: './member-edit.component.css',
